@@ -7,4 +7,7 @@ export default defineNuxtConfig({
       theme: "light-plus",
     },
   },
+  router: {
+    base: process.env.NODE_ENV === "production" ? "/nuxt-content-app/" : "/",
+  },
 });
