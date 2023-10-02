@@ -4,7 +4,11 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   content: {
     highlight: {
-      theme: "light-plus",
+      theme: {
+        default: "github-light",
+        dark: "github-dark",
+        sepia: "monokai",
+      },
     },
   },
   router: {
