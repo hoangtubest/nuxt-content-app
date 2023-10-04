@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/content"],
@@ -11,7 +10,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  router: {
-    base: process.env.NODE_ENV === "production" ? "/nuxt-content-app/" : "/",
+  app: {
+    baseURL: "production" ? "/nuxt-content-app/" : "/",
   },
 });
